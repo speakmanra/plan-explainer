@@ -7,10 +7,12 @@ inputs:
   TF_PLAN:
     description: 'Terragrunt plan output'
     required: true
+  GITHUB_TOKEN:
+    description: 'GitHub token for API access'
+    required: true
 outputs:
   explanation:
     description: 'Explanation of the Terragrunt plan'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  
