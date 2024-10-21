@@ -1,0 +1,16 @@
+name: 'Terragrunt Plan Explainer'
+description: 'Explains Terragrunt plans using Google AI'
+inputs:
+  GOOGLE_API_KEY:
+    description: 'Google AI API Key'
+    required: true
+  TF_PLAN:
+    description: 'Terragrunt plan output'
+    required: true
+outputs:
+  explanation:
+    description: 'Explanation of the Terragrunt plan'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  
